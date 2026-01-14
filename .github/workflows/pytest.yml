@@ -1,5 +1,5 @@
 # .github/workflows/app.yaml
-name: Project Tests
+name: Copy of Project Tests
 on: push
 
 jobs:
