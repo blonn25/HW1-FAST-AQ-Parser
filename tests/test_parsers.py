@@ -81,6 +81,6 @@ def test_FastqFormat():
 
     ##### assert that FastaParser will not read fastq files #####
     fq_file = 'data/test.fq'
-    fq_parser = FastaParser(fq_file)
+    fq_parser = FastqParser(fq_file)
     seq_data = [data for data in fq_parser]
     assert seq_data[0][0] != None
