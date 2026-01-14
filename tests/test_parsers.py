@@ -35,7 +35,7 @@ def test_FastaParser():
     """
 
     ##### assert that the test.fa loads and reads properly #####
-    fa_file = '../data/test.fa'
+    fa_file = 'data/test.fa'
     fa_parser = FastaParser(fa_file)
     seq_data = [data for data in fa_parser]
     
@@ -51,7 +51,7 @@ def test_FastaFormat():
     """
     
     ##### assert that FastaParser will not read fastq files #####
-    fa_file = '../data/test.fa'
+    fa_file = 'data/test.fa'
     fa_parser = FastaParser(fa_file)
     seq_data = [data for data in fa_parser]
     assert seq_data[0][0] != None
@@ -63,7 +63,7 @@ def test_FastqParser():
     an instance of your FastqParser class and assert that it properly reads 
     in the example Fastq File.
     """
-    fq_file = '../data/test.fq'
+    fq_file = 'data/test.fq'
     fq_parser = FastqParser(fq_file)
     seq_data = [data for data in fq_parser]
     
@@ -80,7 +80,7 @@ def test_FastqFormat():
     """
 
     ##### assert that FastaParser will not read fastq files #####
-    fq_file = '../data/test.fq'
+    fq_file = 'data/test.fq'
     fq_parser = FastaParser(fq_file)
     seq_data = [data for data in fq_parser]
     assert seq_data[0][0] != None
