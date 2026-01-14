@@ -25,11 +25,15 @@ def test_transcribe():
     """
     Write your unit test for the transcribe function here.
     """
-    pass
+    seq = "GTTTCTTTGACCTTTTAACCGCTCTCTTAG"
+    trans_seq = "CAAAGAAACUGGAAAAUUGGCGAGAGAAUC" # converted manually using (https://skaminsky115.github.io/nac/DNA-mRNA-Protein_Converter.html)
+    assert trans_seq == transcribe(seq)
 
 
 def test_reverse_transcribe():
     """
     Write your unit test for the reverse transcribe function here.
     """
-    pass
+    seq = 'GCTAGCATATTATCCTAAGGCGTTACCCCA'
+    rev_trans_seq = 'UGGGGUAACGCCUUAGGAUAAUAUGCUAGC' # converted manually using (https://skaminsky115.github.io/nac/DNA-mRNA-Protein_Converter.html)
+    assert rev_trans_seq == reverse_transcribe(seq)
